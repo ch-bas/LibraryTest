@@ -1,0 +1,21 @@
+ <div class="col-xs-12 col-sm-9">
+           
+          <div class="row" >
+             
+            <div class="col-xs-6 col-lg-4">
+              <h2>{{show.name}}</h2>
+              <p><img ng-src={{show.image.medium}}></p>
+             
+                 
+              </div><!--/.col-xs-6.col-lg-4-->
+              <div class="col-xs-6 col-lg-4" style="margin-top:50px;">
+              <h4>Rating: {{show.rating.average}}</h4>
+              <h4>Network: {{show.network.name}}</h4>
+                  <h4 style="display:inline"    >Genres:</h4> <div ng-repeat="w in show.genres" style="display:inline">{{w}} </div>
+              
+                  <div class="bs-callout bs-callout-info" id="callout-helper-context-color-specificity">
+                  <h4>Summary:</h4> <p>{{show.summary}}</p> </div>
+              </div><!--/.col-xs-6.col-lg-4-->
+          </div><!--/row-->
+        </div><!--/.col-xs-12.col-sm-9-->
+ 
